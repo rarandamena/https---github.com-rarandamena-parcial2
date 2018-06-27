@@ -9,11 +9,14 @@ public class Main {
 
         try {
 
+
             lector01.lector();
 
 
         } catch (Exception e) {
             System.out.println("ups, se salio de control");
+            System.out.println("intentemos nuevamente desde 0");
+            lector01.lector();
 
         }
         System.out.println("volver a iniciar? si o nel pastel");
@@ -21,7 +24,6 @@ public class Main {
         String iterando = iterar.next();
         if (iterando.equals("si")) {
             lector01.lector();
-
         } //no else
         System.out.println("solo estas jugando conmigo.....");
         try {
